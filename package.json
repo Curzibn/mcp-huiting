@@ -1,6 +1,6 @@
 {
   "name": "@curzbin/mcp-huiting",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "HuiTing 音频转录 MCP 工具，封装上传与转录接口",
   "keywords": ["mcp", "audio", "transcription", "whisper", "huiting"],
   "author": "郑梓斌",
