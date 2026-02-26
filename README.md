@@ -37,7 +37,7 @@ npm i @curzbin/mcp-huiting
 
 | 工具 | 说明 |
 |------|------|
-| `upload_audio` | 上传音频文件，返回 uuid。参数：`file_content_base64`、`filename` |
+| `upload_audio` | 上传音频文件，返回 uuid。参数：`file_path`（音频文件绝对路径） |
 | `transcribe_audio` | 对已上传音频进行转录。参数：`audio_uuid`（来自 upload_audio 的返回值） |
 
 使用流程：先调用 `upload_audio` 获取 uuid，再调用 `transcribe_audio` 传入该 uuid。
