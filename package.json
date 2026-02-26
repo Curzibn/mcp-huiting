@@ -1,0 +1,44 @@
+{
+  "name": "@curzbin/mcp-huiting",
+  "version": "0.1.0",
+  "description": "HuiTing 音频转录 MCP 工具，封装上传与转录接口",
+  "keywords": ["mcp", "audio", "transcription", "whisper", "huiting"],
+  "author": "郑梓斌",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Curzibn/mcp-huiting"
+  },
+  "homepage": "https://github.com/Curzibn/mcp-huiting#readme",
+  "bugs": {
+    "url": "https://github.com/Curzibn/mcp-huiting/issues"
+  },
+  "private": false,
+  "type": "module",
+  "main": "dist/index.mjs",
+  "module": "dist/index.mjs",
+  "bin": {
+    "mcp-huiting": "bin/mcp-huiting.js"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs"
+    }
+  },
+  "files": ["dist", "bin"],
+  "scripts": {
+    "build": "npx tsdown",
+    "dev": "npx tsdown --watch"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.25.3",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsdown": "^0.20.0-beta.4",
+    "typescript": "^5.7.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
